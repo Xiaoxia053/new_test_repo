@@ -30,4 +30,9 @@ fasta_sequence_lengths.append(sequence_length)
 # Closing the file:
 fastafile.close()
 
-print(sorted(fasta_sequence_lengths))
+def print_stats(sequence_list):
+    print(sorted(sequence_list))
+    print(min(sequence_list))
+    print(max(sequence_list))
+
+print_stats(fasta_sequence_lengths)
